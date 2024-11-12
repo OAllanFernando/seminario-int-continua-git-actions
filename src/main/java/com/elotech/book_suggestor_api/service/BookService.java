@@ -7,6 +7,7 @@ import com.elotech.book_suggestor_api.utils.StandardResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -27,7 +28,7 @@ public class BookService {
     }
 
     public List<Book> getAllBooks() {
-        return bookRepository.findAll();
+        return new ArrayList<Book>();
     }
 
     public Book getBookById(Long id) throws BookException {
