@@ -28,7 +28,7 @@ public class BookService {
     }
 
     public List<Book> getAllBooks() {
-        return bookRepository.findAll();
+        return new ArrayList<Book>();
     }
 
     public Book getBookById(Long id) throws BookException {
