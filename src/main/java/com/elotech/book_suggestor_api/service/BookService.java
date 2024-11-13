@@ -45,7 +45,7 @@ public class BookService {
         return bookRepository.save(book);
     }
 
-    public void deleteBook(Long id) throws BookException {
+    public void deleteBook(String id) throws BookException {
         Book book = getBookById(id);
         bookRepository.delete(book);
     }
