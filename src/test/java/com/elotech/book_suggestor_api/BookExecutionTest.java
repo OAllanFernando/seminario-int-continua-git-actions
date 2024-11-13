@@ -34,7 +34,7 @@ public class BookExecutionTest {
 
         Mockito.when(bookRepository.findAll()).thenReturn(Collections.singletonList(book));
 
-        List<Book> books = this.bookService.getAllBooks();
+        List<Book> books;
 
         verify(bookRepository, times(1)).findAll();
 
