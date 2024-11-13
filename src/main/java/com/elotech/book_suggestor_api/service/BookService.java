@@ -28,6 +28,7 @@ public class BookService {
     }
 
     public List<Book> getAllBooks() {
+        System.out.println("Foi");
         return new ArrayList<Book>();
     }
 
