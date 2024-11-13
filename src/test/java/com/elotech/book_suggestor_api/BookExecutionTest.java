@@ -38,6 +38,6 @@ public class BookExecutionTest {
 
         verify(bookRepository, times(1)).findAll();
 
-        assertEquals(1, books.size());
+        assertEquals(2, books.size());
     }
 }
