@@ -28,7 +28,11 @@ public class BookService {
     }
 
     public List<Book> getAllBooks() {
-        return bookRepository.findAll();
+        List<Book> books = bookRepository.findAll();
+        if (books.isEmpty()) {
+            throw new BookException("Os cara é fofo d+");
+        }
+        return books;
     }
 
     public Book getBookById(Long id) throws BookException {
